@@ -2,13 +2,13 @@
     class Movie{
         protected $title;
         protected $plot;
-        protected $date;
+        protected $year;
         protected $rating;
 
-        function __construct($_title, $_plot, $_date, $_rating){
+        function __construct($_title, $_plot, $_year, $_rating){
             $this->title = $_title;
             $this->plot = $_plot;
-            $this->date = $_date;
+            $this->year = $_year;
             $this->rating = $_rating;
         }
 
@@ -18,8 +18,8 @@
         public function getPlot(){
             return $this->plot;
         }
-        public function getDate(){
-            return $this->date;
+        public function getYear(){
+            return $this->year;
         }
         public function getRating(){
             return $this->rating;
@@ -31,8 +31,8 @@
         public function setPlot($_plot){
             $this->plot = $_plot;
         }
-        public function setDate($_date){
-            $this->date = $_date;
+        public function setYear($_year){
+            $this->year = $_year;
         }
         public function setRating($_rating){
             $this->rating = $_rating;
